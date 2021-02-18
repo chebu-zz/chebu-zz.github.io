@@ -1,4 +1,37 @@
-h1
+body
 {
-    color: blueviolet;
+    background-color: #333635
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+header
+{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+nav
+{
+    background-color: darkcyan;
+    text-align: center;
+}
+
+main
+{
+    background-color: cadetblue;
+    text-align: center;
+    height: 50%;
+}
+
+footer
+{
+    background-color: dimgrey;
+    text-align: center;
+    min-height: 50px;
 }
