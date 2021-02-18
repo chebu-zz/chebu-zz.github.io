@@ -1,0 +1,27 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+.box1 {
+    background-color: yellow;
+    width: 600px;
+    height: 400px;
+}
+
+.box2 {
+    background-color: teal;
+    width: 600px;
+    height: 400px;
+}
+
+.box3 {
+    background-color: gray;
+    width: 100px;
+    height: 300px;
+}
+
+.highlight-text {
+    color: darkblue;
+    font-size: 30px;
+}
