@@ -1,37 +1,172 @@
-body
-{
-    background-color: #333635
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.container
+body
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+    background-color: #333635;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 230, 230);
+}
+
+.wrapper
+{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    max-width: 30cm;
+
+}
+
+.logo
+{
+    font-size: 1cm;
+    display: inline-block;
 }
 
 header
 {
-    background-color: blueviolet;
+    padding: 20px 40px 20px;
+    border-bottom-color: rgb(243, 135, 46);
+    border-bottom-width: 5px;
+    border-bottom-style:solid;
     text-align: center;
 }
 
 nav
 {
-    background-color: darkcyan;
-    text-align: center;
+    padding-top: 5px;
+}
+
+nav li
+{
+    display: inline;
+    font-size: 0.5cm;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 main
 {
-    background-color: cadetblue;
+    background-image:url("/Img/SiteBack.jpg");
+    background-color:rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:auto;
     text-align: center;
-    height: 50%;
+    vertical-align: middle;
+    width: 100%;
+    min-height:80vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-footer
+.gameList
 {
-    background-color: dimgrey;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game
+{
+    white-space: nowrap;
+    padding: 25px
+}
+
+.gameIcon
+{
+    width: 300px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.gameScreenshot
+{
+    width: 800px;
+    aspect-ratio: 16/9;
+    max-width: 95%;
+    padding: 5px;
+    display: inline;
+}
+
+footer 
+{
+    background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
-    min-height: 50px;
+    width:100%;
+    height:30px;
+    padding-top: 15px;
+    border-bottom-color: rgb(243, 135, 46);
+    border-bottom-style:solid;
+    border-bottom-width: 2px;
+}
+
+h1
+{
+    font-size: 1.2cm;
+}
+
+p
+{
+    white-space: normal;
+    font-size: 0.4cm;
+}
+
+a
+{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover, a:active
+{
+    color: rgb(255, 102, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.highlighted
+{
+    color: rgb(255, 102, 0);
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width:700px)
+{
+    header
+    {
+        text-align: unset;
+    }
+
+    nav
+    {
+        padding-top:15px;
+        float:right;
+    }
+
+    nav li
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1
+    {
+        font-size: 2cm;
+    }
+
+    p
+    {
+        font-size: 0.6cm;
+    }
+
 }
